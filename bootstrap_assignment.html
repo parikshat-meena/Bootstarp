@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        img {
+            height: 60vh;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-dark text-light
+                bg-dark" href="#">
+                    {B}
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="me-sm-2 btn-outline-light bg-dark text-light" type="search" placeholder="Search">
+                        <!-- login modal button -->
+                        <button type="button" class="btn btn-outline-light bg-dark text-light me-sm-2"
+                            data-bs-toggle="modal" data-bs-target="#modal">Login to
+                            Website</button>
+                        <!-- sign up button -->
+                        <type="submit"> <a class="btn 
+                            btn-outline-dark 
+                            bg-warning" href="#sign">Sign Up</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- carousel -->
+    <div id="maincarousal" class="carousel slide" data-bs-ride="carousel">
+        
+        <!-- Indicator Buttons -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#maincarousal" data-bs-slide-to="0" class=""></button>
+            <button type="button" data-bs-target="#maincarousal" data-bs-slide-to="1" class="active"></button>
+            <button type="button" data-bs-target="#maincarousal" data-bs-slide-to="2" class=""></button>
+            <button type="button" data-bs-target="#maincarousal" data-bs-slide-to="3" class=""></button>
+            <button type="button" data-bs-target="#maincarousal" data-bs-slide-to="4" class=""></button>
+        </div>
+
+        <!-- The main content: slides/image -->
+        <div class="carousel-inner">
+            <div class="carousel-item active " >
+                <img src="/assingments/image/1.jpg" class="d-block w-100" alt="Nature">
+            </div>
+            <div class="carousel-item ">
+                <img src="/assingments/image/4.jpg" class="d-block w-100" alt="Nature">
+            </div>
+            <div class="carousel-item">
+                <img src="/assingments/image/3.jpg" class="d-block w-100" alt="Nature">
+            </div>
+            <div class="carousel-item ">
+                <img src="/assingments/image/5.jpg" class="d-block w-100" alt="Nature">
+            </div>
+            <div class="carousel-item">
+                <img src="/assingments/image/6.jpg" class="d-block w-100" alt="Nature">
+            </div>
+        </div>
+
+        <!-- The control buttons for prev and next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#maincarousal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#maincarousal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- Table -->
+    <div class="fw-bold fs-1 
+text-primary text-center my-5">Highest Run Scorers in Test Match</div>
+    <div class="table-responsive-sm table" id="table">
+        <table class="table  table-stripped table-hover caption-top table-sm">
+
+            <th class="table-primary" colspan="8">Most Runs</th>
+            <tr class="table-secondary">
+                <td>Player</td>
+                <td>Span</td>
+                <td>Matches</td>
+                <td>Inns</td>
+                <td>NO</td>
+                <td>Runs</td>
+                <td>HS</td>
+                <td>Average</td>
+            </tr>
+            <tr>
+                <td>SR Tendulkar(INDIA)</td>
+                <td>1989-2013</td>
+                <td>200</td>
+                <td>329</td>
+                <td>33</td>
+                <td>15921</td>
+                <td>248*</td>
+                <td>53.78</td>
+            </tr>
+            <tr>
+                <td>RT Ponting(AUS)</td>
+                <td>1995-2012</td>
+                <td>168</td>
+                <td>287</td>
+                <td>29</td>
+                <td>13378</td>
+                <td>257</td>
+                <td>51.85</td>
+            </tr>
+            <tr>
+                <td>JH Kallis(SA)</td>
+                <td>1995-2013</td>
+                <td>166</td>
+                <td>280</td>
+                <td>40</td>
+                <td>13289</td>
+                <td>224</td>
+                <td>55.37</td>
+            </tr>
+            <tr>
+                <td>R Dravid(INDIA)</td>
+                <td>1996-2012</td>
+                <td>164</td>
+                <td>286</td>
+                <td>32</td>
+                <td>13288</td>
+                <td>270</td>
+                <td>52.31</td>
+            </tr>
+            <tr>
+                <td>AN COOK(ENG)</td>
+                <td>2006-2018</td>
+                <td>161</td>
+                <td>291</td>
+                <td>16</td>
+                <td>12472</td>
+                <td>294</td>
+                <td>45.35</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- modal -->
+    <!-- login modal -->
+    <div class="modal fade modal-dialog-scrollable" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- login modal header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                </div>
+                <!-- login modal body -->
+                <div class="table table-responsive-lg table-borderless modal-body" id="m-body">
+                    <table class="table table-hover"></table>
+                    <tr class="align-middle">
+                        <td><label for="username">Username </label></td>
+                        <td>
+                            <div class="input"> <input type="text" id="username" placeholder="Enter Username"></div>
+                        </td>
+                    </tr>
+                    <tr class="align-middle">
+                        <td><label for="password">Password </label></td>
+                        <td>
+                            <div class="input"><input type="password" id="password" placeholder="Enter Password"></div>
+                        </td>
+                    </tr>
+                </div>
+                <!-- login modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <!-- sign up form -->
+    <div class="fw-bold fs-1 text-primary text-center my-5"> Form</div>
+    <form id="sign">
+        <div class="container bg-primary mx-auto my-5" style="width: 600px; height: 600px;">
+            <p class="p-4"></p>
+            <div class="container
+                text-dark bg-light w-75 d-grid 
+                gap-2 mt-4 ">
+                <div class="ms-4 text-dark fs-1 fw-bold">Sign Up
+                </div>
+                <div class="ms-3 fw- gap-2 row p-2 w-100 text-muted">
+                    <caption class="caption-top ">Please fill in this form to create account!</caption>
+                </div>
+                <div class="row align-item-center ms-2 p-0 w-100 ">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row align-item-center ms-2 p-2 w-100">
+                    <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+                </div>
+                <div class="row align-item-center p-2 w-100 m-2" m>
+                    <input type="password" class="form-control" placeholder="Password" id="inputPassword4">
+                </div>
+                <div class="row 
+                align-item-center p-2 
+                w-100 ms-2" m>
+                    <input type="password" class="form-control" placeholder="Confirm Password
+                ">
+                </div>
+                <div class=" p-2 w-100 ms-2">
+                    <input type="checkbox" class>
+                    I accept the <span class="text-primary">Terms of Use </span>& <span class="text-primary">Privacy
+                        Policy</span>
+                </div>
+                <div class="col ms-3"><button type="sumbit" class="btn btn-primary fw-bold" value="login">Sign
+                        Up</button></div>
+                <div class="col"></div>
+
+
+                <div class="text-white bg-primary row text-center "><label>
+                        Already have an account?
+                        <a href="# login_here" id="login_here" class="text-white ">Login here</a></label>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </form>
+    <hr>
+
+    <!-- cards  -->
+    <div class="fw-bold fs-1 text-primary text-center mt-5">Cards</div>
+    <div class="container ">
+        <div class="card mx-auto mt-5" style="width: 18rem;">
+            <img src="/image/messi3.jfif" class="card-img-top" alt="...">
+            <div class="card-body bg-info">
+                <h5 class="card-title fw-bold  ">Messi</h5>
+                <p class="card-text fw-bold">Goat : Greatest Football Player of All time </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-warning fw-bold">Best Dribbler</li>
+                <li class="list-group-item bg-warning fw-bold">Best Finisher</li>
+                <li class="list-group-item bg-warning fw-bold">Best Playmaker</li>
+            </ul>
+            <div class="card-body bg-info ">
+                <a href="https://www.instagram.com/leomessi/?hl=en" class="card-link text-light text-hover">Follow
+                    @insta</a>
+                <a href="https://twitter.com/ieomessiok?lang=en" class="card-link text-light">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- progress -->
+
+    <div class="container">
+        <div class="fw-bold fs-1 text-primary text-center my-5 ">Progress</div>
+        <div></div>
+    </div>
+    <div class="container-sm d-grid gap-1 my-5">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- spinners -->
+    <div class="container">
+        <div class="fw-bold fs-1 text-primary text-center my-5 ">Spinners</div>
+        <div class="container text-center my-5">
+            <div class="spinner-border text-primary" role="status">
+                <span></span>
+            </div>
+            <div class="spinner-border text-secondary" role="status">
+            </div>
+            <div class="spinner-border text-success" role="status">
+
+            </div>
+            <div class="spinner-border text-danger" role="status">
+
+            </div>
+            <div class="spinner-border text-warning" role="status">
+
+            </div>
+            <div class="spinner-border text-info" role="status">
+
+            </div>
+            <div class="spinner-border text-light" role="status">
+
+            </div>
+            <div class="spinner-border text-dark" role="status">
+
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
